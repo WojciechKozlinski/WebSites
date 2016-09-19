@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <title>BeautyProf</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Content/bootstrap.css">
@@ -18,14 +18,45 @@
     2. col-sm dla małych wyświetlaczy (szerokość ekranu ≥ 768 pikseli),
     3. col-md dla średnich wyświetlaczy (szerokość ekranu ≥ 992 piksele),
     4. col-lg dla dużych wyświetlaczy (szerokość ekranu ≥ 1200 pikseli).-->
-
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SitePoint</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar-content">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">Strona główna</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-target="#" href="http://www.google.com">
+                            Profil <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Odsyłacz 1.</a></li>
+                            <li><a href="#">Odsyłacz 2.</a></li>
+                            <li><a href="#">Odsyłacz 3.</a></li>
+                            <li><a href="#">Odsyłacz 4.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Wiadomości</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-lg-4 col-md-6 col-xs-12">
                 <h4>Kolumna 1.</h4>
             </div>
-            <div class="col-xs-6">
+            <div class="col-lg-4 col-md-6 col-xs-12">
                 <h4>Kolumna 2.</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <h4>Kolumna 3.</h4>
             </div>
         </div>
     </div>
